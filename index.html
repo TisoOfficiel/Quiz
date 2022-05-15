@@ -1,0 +1,226 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Quiz App | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Commencer</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Quelque Règles avant de Commencer</span></div>
+        <div class="info-list">
+            <div class="info">1. Vous avez seulement <span>30 secondes</span> par question.</div>
+            <div class="info">2. Une fois cliqué la réponse est validé.</div>
+            <div class="info">3. Vous avez pouvez continuer même si une question est fausse cependant vous devrez faire monter la cagnote de 100€.</div>
+            <div class="info">4. Le mode admin est disponible en cas de problème il permet de débloquer tout les boutons (notament en cas d'erreur de réponse)</div>
+            <div class="info">6. Vous avez le droit a un joker le sondage des Locklins.</div>
+            <div class="info">5. Prenez un max de pur plaisir.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Quitter</button>
+            <button class="restart">Débuter</button>
+        </div>
+    </div>
+
+    <div class="Palier-Container ">
+        <div id="Palier1"class="Palier-Content">
+            <div class="QuestionPalier">
+                <p>1</p>
+                <i id="icone1"class="fas fa-circle " style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>800 €</p>
+            </div>
+        </div>
+        <div id="Palier2"class="Palier-Content">
+            <div class="QuestionPalier">
+                <p>2</p>
+                <i id="icone2"class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>1 500 €</p>
+            </div>
+        </div>
+        <div id="Palier3" class="Palier-Content">
+            <div class="QuestionPalier">
+                <p>3</p>
+                <i id="icone3" class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>3 000 €</p>
+            </div>
+        </div>
+        <div id="Palier4" class="Palier-Content SecuPalier">
+            <div class="QuestionPalier">
+                <p>4</p>
+                <i id="icone4"class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>6 000 €</p>
+            </div>
+        </div>
+        <div id="Palier5" class="Palier-Content">
+            <div class="QuestionPalier">
+                <p>5</p>
+                <i id="icone5"class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>12 000 €</p>
+            </div>
+        </div>
+        <div id="Palier6" class="Palier-Content">
+            <div class="QuestionPalier">
+                <p>6</p>
+                <i id="icone6"class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>20 000 €</p>
+            </div>
+        </div>
+        <div id="Palier7" class="Palier-Content">
+            <div class="QuestionPalier">
+                <p>7</p>
+                <i id="icone7"class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>25 000 €</p>
+            </div>
+        </div>
+        <div id="Palier8" class="Palier-Content">
+            <div class="QuestionPalier">
+                <p>8</p>
+                <i id="icone8"class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>40 000 €</p>
+            </div>
+        </div>
+        <div id="Palier9" class="Palier-Content SecuPalier">
+            <div class="QuestionPalier">
+                <p>9</p>
+                <i id="icone9"class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>50 000 €</p>
+            </div>
+        </div>
+        <div id="Palier10"class="Palier-Content">
+            <div class="QuestionPalier">
+                <p>10</p>
+                <i id="icone10"class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>72 000 €</p>
+            </div>
+        </div>
+        <div id="Palier11"class="Palier-Content">
+            <div class="QuestionPalier">
+                <p>11</p>
+                <i id="icone11"class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>100 000 €</p>
+            </div>
+        </div>
+        <div id="Palier12"class="Palier-Content">
+            <div class="QuestionPalier">
+                <p>12</p>
+                <i id="icone12"class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>120 000 €</p>
+            </div>
+        </div>
+        <div id="Palier13" class="Palier-Content">
+            <div class="QuestionPalier">
+                <p>13</p>
+                <i id="icone13"class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>300 000 €</p>
+            </div>
+        </div>
+        <div id="Palier14" class="Palier-Content">
+            <div class="QuestionPalier">
+                <p>14</p>
+                <i id="icone14"class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>500 000 €</p>
+            </div>
+        </div>
+        <div id="Palier15"class="Palier-Content SecuPalier">
+            <div class="QuestionPalier">
+                <p>15</p>
+                <i id="icone15"class="fas fa-circle" style="color: transparent;"></i>
+            </div>
+            <div class="Prix">
+                <p>1 MILLION €</p> 
+            </div>
+        </div>
+        
+    </div>
+    <!-- Quiz Box -->
+    <div id ="quiz_box" class="quiz_box">
+        <header>
+            <div class="title">Qui veut gagner des Lockcoins</div>
+            <div class="timer">
+                <div class="time_left_txt">Temps passé</div>
+                <div class="timer_sec">30</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Suivant</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Rejouer</button>
+            <button class="quit">Quitter</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
